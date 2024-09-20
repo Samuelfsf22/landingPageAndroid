@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal; /* ou bold, se necessário */
+    font-style: normal; /* ou italic, se necessário */
+}
+
+body{
+    background-color: rgb(167, 221, 190);
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background-image: linear-gradient(rgb(124, 235, 172), rgb(35, 100, 62));
+    box-shadow: black 0 0 6px;
+    
+}
+
+header h1{
+    color: #FFFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    font-family: "Cousine", monospace;
+}
+
+header div{
+    text-align: center;
+    color: #FFFF;
+    display: flex;
+    justify-content: center;
+    
+}
+header div p {
+    width: 400px;
+    color: #e4e4e4;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+main{
+    background-color: #FFFF;
+    margin: 0 auto;
+    padding: 16px 3% 16px 3%;
+    max-width: 765px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: black 0 0 6px;
+}
+
+@media (max-width: 768px) {
+    main{
+        width: 80%;
+    }
+
+}
+
+h2{
+    color: rgb(0, 107, 0);
+    font-size: 32px;
+    font-family: 'idroid', sans-serif;
+}
+
+main p{
+    margin: 10px 0px 10px 0px;
+}
+
+span{
+    color: rgb(2, 85, 2);
+    font-weight: bold;
+}
+
+h3{
+    background-image: linear-gradient(to right, rgb(142, 241, 142) , rgb(255, 255, 255));
+    color: rgb(0, 107, 0);
+    font-family: 'idroid', sans-serif;
+    padding-left: 10px;
+}
+
+.divImg{
+    overflow: hidden;
+}
+
+.divImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divVideo{
+    background-color: rgb(8, 63, 8);
+    padding: 3%;
+}
+
+iframe{
+    width: 100%;
+    height: 315px;
+}
+
+.paragraph{
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.divTabela{
+    background-color: rgb(167, 221, 190);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+h4{
+    background-color: rgb(58, 204, 121);
+    color: #FFFF;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.divTabela p{
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.divTabela ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.divTabela ul li{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 425px) {
+    main{
+        width: 90%;
+    }
+    .divTabela ul{
+        height: 160px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .divTabela ul{
+        height: 160px;
+        font-size: 10px;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(35, 100, 62);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+}
